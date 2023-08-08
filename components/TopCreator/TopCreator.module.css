@@ -1,0 +1,64 @@
+.topCreatorContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.topCreatorTittle {
+  margin-bottom: 20px;
+  font-size: 25px;
+  font-weight: 600;
+  float: left;
+  left: 16px;
+}
+
+.topCreatorRight {
+  float: right !important;
+  right: 0;
+}
+
+.topCollectionText {
+  margin-left: 3%;
+  width: 40%;
+  font-weight: 500;
+}
+.topCreatorStar {
+  font-size: 65%;
+}
+
+.topCreatorIconName {
+  display: flex;
+  padding: 3%;
+}
+.totalVolume {
+  font-weight: 500;
+  right: 0;
+}
+.nameTotal {
+  font-weight: 400;
+  font-size: 80%;
+}
+.topCollectionName {
+  margin-left: 5%;
+}
+
+@media (max-width: 500px) {
+  .topCollectionIconName {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .topCollectionText {
+    font-size: 0.7rem;
+  }
+
+  .topCollectionStar {
+    font-size: 0.5rem;
+  }
+  .totalVolume {
+    font-size: 0.7rem;
+  }
+}

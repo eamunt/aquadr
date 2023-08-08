@@ -1,0 +1,67 @@
+.headerBigContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.headerBig {
+  width: 50%;
+}
+.headerMin {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.headerBigText {
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 50px;
+  line-height: 125%;
+}
+.headerMinText {
+  margin-top: 2rem;
+  font-size: 20px;
+}
+.headerParrotImage {
+  width: 500px;
+  height: 500px;
+}
+.headerParameter {
+  margin-top: 4rem;
+  display: flex;
+}
+.headerParameterText {
+  display: flex;
+  margin: auto 3rem;
+}
+.headerParameterText h1 {
+  margin-right: 2rem;
+}
+.headerParameterMinText {
+  display: contents;
+  margin: auto;
+}
+.headerBigButton {
+  display: flex;
+  justify-content: start;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+.headerBigButton button{
+  margin-right: 10%;
+}
+@media (max-width: 500px) {
+  .headerMin {
+    display: none;
+  }.headerBig {
+    width: 100%;
+    padding-top: 40px;
+  }
+  .headerMinText{
+    margin-left: 0;
+  }
+  .headerBigText {
+    font-weight: bold;
+    font-size: 25px;
+    text-align: justify;
+    line-height: 125%;
+  }
+}

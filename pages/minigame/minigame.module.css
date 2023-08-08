@@ -1,0 +1,179 @@
+.minigameContainer {
+  min-height: 80vh;
+  display: flex;
+  margin-top: 5%;
+}
+
+/* left side */
+
+.leftSide {
+  width: 50%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.nftContainer {
+  width: 360px;
+  height: auto;
+  margin: 8px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  backface-visibility: hidden;
+  outline: 1px solid rgba(28, 25, 25, 0.1);
+  transform: translate3d(0px, 0px, 0px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* padding: 8px; */
+  transition: all 0.25s ease-in-out;
+  box-shadow: #4d88a2 0px 10px 29px 10px;
+  border-radius: 15px;
+}
+
+.nftContainer:hover {
+  cursor: pointer;
+  transform: translate3d(0px, -4px, 0px);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nftImage {
+  width: 100% !important;
+  height: auto;
+  width: 360px;
+  height: 360px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.04);
+  object-fit: cover;
+}
+
+.nftTokenId {
+  font-size: 12px;
+  margin: 0px;
+  margin-top: 12px;
+}
+
+.containerMini {
+  margin-top: 7rem;
+}
+
+.containerMiniItem a {
+  text-decoration: none;
+  color: black;
+}
+
+.nftName {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 100%;
+  color: black;
+  font-family: inherit;
+  vertical-align: inherit;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+/* right side */
+
+.rightSide {
+  width: 50%;
+  height: 50%;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading {
+  font-size: 26px;
+  margin: 0 0 12px 0;
+}
+
+.rightSide button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 4px 0;
+  color: white;
+  border: none;
+  background-color: rgb(32, 129, 226);
+  transition: 0.2s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nftContainer button {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 18px;
+  margin: 4px 0;
+  color: white;
+  border: none;
+  background-color: #1b5d8d;
+  transition: 0.2s;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.nftContainer button:hover {
+  cursor: pointer;
+  background-color: #1e71ad;
+  color: rgb(241, 202, 202);
+  transform: scale(1.02);
+}
+
+.rightSide button:hover {
+  cursor: pointer;
+  background-color: #1e71ad;
+  color: rgb(241, 202, 202);
+  transform: scale(1.02);
+}
+
+.disableBut button {
+  cursor: not-allowed;
+  font-size: 20px;
+  background-color: #e6e8ec;
+  border-color: #e6e8ec;
+  box-shadow: none;
+  color: #777e91;
+}
+
+.icon {
+  border-radius: 8px;
+  width: 24px !important;
+  height: 24px !important;
+  margin-right: 4px;
+}
+
+#social_icons {
+  padding: 0.5em;
+  line-height: 1.22;
+  float: left;
+  vertical-align: bottom;
+}
+
+@media (max-width: 750px) {
+  .minigameContainer {
+    flex-direction: column;
+  }
+  .leftSide {
+    width: 100%;
+  }
+  .rightSide {
+    width: 100%;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+  }
+}

@@ -1,0 +1,322 @@
+.navContainer {
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  background-color: #ececec;
+  position: fixed;
+}
+.navMiniGame {
+  color: black !important;
+  font-weight: 550 !important;
+  font-size: 20px !important;
+  text-decoration: none !important;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.navDropdown {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 1rem;
+  display: flex;
+  height: 100px;
+  align-items: center;
+}
+.navDropdown div {
+  margin-top: 0 !important;
+}
+.linkDropdown {
+  color: "black";
+  font-weight: 550;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.linkDropdown :hover {
+  background-color: #146ea2;
+}
+
+.navDropdown a {
+  padding: 0 !important;
+  color: black;
+  font-weight: 550;
+}
+
+.nav {
+  background-color: #ececec !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: transparent !important;
+}
+
+.navLeft {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+  transition: all 0.15s ease-in-out;
+}
+
+.navbarTittleNfts {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 22px;
+  color: #000;
+  margin-right: 2rem;
+}
+
+.navMiddle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+  font-size: 16px;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+  font-weight: 550;
+  letter-spacing: 0.2px;
+  transition: 0.2s ease-in-out;
+  font-size: 20px !important;
+}
+
+.link:hover {
+  color: blue;
+}
+
+.homeLink:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.navRight {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  float: right;
+}
+
+.profileImage {
+  /* margin-top: 6px; */
+  transition: all 0.15s ease-in-out;
+}
+
+.profileImage:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.homeLink {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.headerLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+}
+
+.headerLinkDropdown {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin: 0.5rem;
+  padding: 10px 200px 10px 10px;
+  border-radius: 10px;
+}
+
+.headerIcon {
+  display: none;
+}
+
+.linkDropdown :hover {
+  background-color: #ececec !important;
+}
+
+/* mobile  */
+
+.menuText:hover {
+  cursor: pointer;
+}
+
+.dropDownMenu {
+  display: none;
+}
+
+.dropdownIcon {
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown_content {
+  opacity: 0;
+  position: absolute;
+  min-width: 20px;
+  z-index: 3;
+  background-color: #ffffff;
+  margin-top: 0.5px !important;
+  transition: opacity 0.3s ease-out;
+  display: none;
+}
+
+.headerSoon {
+  color: #ff9933;
+  margin-left: 2%;
+  margin-top: 3px;
+  font-size: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showDropdowMenu {
+  opacity: 1;
+  display: block;
+}
+
+.navRewards {
+  display: flex;
+  justify-content: center;
+  font-weight: 500;
+  align-items: center;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.svgRotate {
+  transform: rotate(90deg) !important;
+  transition: 0.1s;
+}
+
+.headerCenter {
+  align-items: center;
+  margin-left: 5%;
+}
+
+.navIconWallet {
+  display: flex;
+  align-items: center;
+}
+
+.navConnect {
+  margin-right: 5%;
+}
+.navConnect button .css-1iyoj2o .span {
+  color: black !important;
+}
+
+@media (max-width: 1290px) {
+  .navRight {
+    float: left;
+    display: block;
+  }
+  .navDropdown {
+    height: auto;
+    align-items: normal;
+    display: block;
+  }
+  .navMiniGame {
+    display: block;
+    height: auto;
+  }
+  .headerIcon {
+    display: block;
+    margin-right: 0.5rem;
+    margin-left: 0.75rem;
+  }
+  .headerCenter {
+    margin: 0;
+  }
+  .headerMarket {
+    display: flex;
+    align-items: center;
+  }
+
+  .headerLink {
+    justify-content: start;
+    margin-left: 0rem;
+    margin-bottom: 0.5rem;
+  }
+  .navRewards {
+    justify-content: start;
+  }
+}
+
+@media (max-width: 920px) {
+  .navLeft {
+    margin-left: 0;
+  }
+
+  .navMiddle {
+    margin-left: 1rem;
+  }
+
+  .link {
+    font-size: 20px;
+  }
+
+  .navRight {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+  }
+
+  .headerLink {
+    margin-bottom: 0.5rem;
+  }
+}
+
+/* Sreens less than 720px */
+@media (max-width: 800px) {
+  .headerIcon {
+    display: block;
+    margin-right: 0.5rem;
+  }
+
+  .offcanvas {
+    width: 75%;
+  }
+
+  .navbarSearch {
+    display: none;
+  }
+
+  .navMiddle {
+    display: none;
+  }
+
+  .dropDownMenu {
+    display: block;
+  }
+
+  .link {
+    /* padding: 12px; */
+    display: block;
+  }
+
+  .link:hover {
+    background-color: #146ea2;
+  }
+}
+@media (max-width: 500px){
+  .headerLinkDropdown{
+    margin: 0.5rem !important;
+    padding: 10px 120px 10px 10px;
+  }
+}
