@@ -10,7 +10,7 @@ export const GetNFTs = (account: any) => {
   const [isLoadingNFTs, setIsLoadingNFTs] = useState(false);
   // console.log("process.env.MYKEY", process.env.MY_KEY as string)
   let headers = new Headers();
-  headers.set("Authorization", `Bearer cqt_rQ46yWprphHwWQX7YMXmpHYC7cDB`);
+  headers.set("Authorization", `Bearer cqt_rQp8Vh4jFBcHMhtbjrjBb9RbcPvX`);
 
   useEffect(() => {
     const getNFTs = async () => {
@@ -102,12 +102,14 @@ export const getABI = async (contractAddress: string) => {
 };
 
 export const getEventsApi = async (address: any, tokenId: any) => {
-
   let headers = new Headers();
-    headers.set('Authorization', "Bearer cqt_rQ46yWprphHwWQX7YMXmpHYC7cDB")
-   
-  const res = await fetch(`https://api.covalenthq.com/v1/base-testnet/tokens/${address}/nft_transactions/${tokenId}/?no-spam=false`, {method: 'GET', headers: headers})
+  headers.set("Authorization", "Bearer cqt_rQ46yWprphHwWQX7YMXmpHYC7cDB");
+
+  const res = await fetch(
+    `https://api.covalenthq.com/v1/base-testnet/tokens/${address}/nft_transactions/${tokenId}/?no-spam=false`,
+    { method: "GET", headers: headers }
+  );
   const data = await res.json();
   // console.log(data.data.items[0]);
   return data.data.items[0].nft_transactions;
-}
+};

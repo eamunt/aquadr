@@ -11,15 +11,13 @@ import Container from "../../components/Container/Container";
 import ListingWrapper from "../../components/ListingWrapper/ListingWrapper";
 import NFTGrid from "../../components/NFT/NFTGrid";
 import Skeleton from "../../components/Skeleton/Skeleton";
-import {
-  MARKETPLACE_ADDRESS,
-} from "../../const/contractAddresses";
+import { MARKETPLACE_ADDRESS } from "../../const/contractAddresses";
 import styles from "../../styles/Profile.module.css";
 import randomColor from "../../util/randomColor";
 import { useAddress } from "@thirdweb-dev/react";
 import { GetNFTs, getABI } from "../../components/NFT/hook/getNFTs";
-import Tab from 'react-bootstrap/Tab';
-import Tabs from 'react-bootstrap/Tabs';
+import Tab from "react-bootstrap/Tab";
+import Tabs from "react-bootstrap/Tabs";
 
 const [randomColor1, randomColor2, randomColor3, randomColor4] = [
   randomColor(),
@@ -110,15 +108,14 @@ export default function ProfilePage() {
               <p>Nothing for sale yet! Head to the sell tab to list an NFT.</p>
             ) : (
               <div className={styles.tabListing}>
-                { directListings?.map((listing, index) => (
-                <ListingWrapper
-                  listing={listing}
-                  abi={abiList[index]}
-                  key={listing.id}
-                />
-              ))}
+                {directListings?.map((listing, index) => (
+                  <ListingWrapper
+                    listing={listing}
+                    abi={abiList[index]}
+                    key={listing.id}
+                  />
+                ))}
               </div>
-             
             )}
           </Tab>
         </Tabs>

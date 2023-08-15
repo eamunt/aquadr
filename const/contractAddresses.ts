@@ -7,7 +7,7 @@ export const NETWORK = BaseGoerli;
 
 // 2. The address of the marketplace V3 smart contract.
 // Deploy your own: https://thirdweb.com/thirdweb.eth/MarketplaceV3
-export const MARKETPLACE_ADDRESS = "0x805D1391C065fBA9EC5893a965524b3102fFA998";
+export const MARKETPLACE_ADDRESS = "0x7aE5279829ad32Ca7DfF15668550De10Eee98B70";
 
 export const MINI_GAME_ADDRESS = "0x333A2bF4239F2903E396f8929fE57bd58a519c5d";
 
